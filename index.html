@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- daisyUi cdn link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Payoo</title>
+
+    <style>
+        /* for hide the arrow from input type number */
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .outfit-font {
+            font-family: "Outfit", serif;
+            font-optical-sizing: auto;
+
+        }
+    </style>
+</head>
+
+<body class="outfit-font bg-slate-800 ">
+    <section class="max-w-md min-h-screen bg-gray-100 mx-auto py-5 px-5 flex flex-col justify-center">
+
+        <div class="flex flex-col align-middle">
+            <div class="flex flex-col">
+                <img class="w-80 mx-auto" src="assets/bg.png" alt="">
+
+                <img class="w-24 mx-auto -mt-60" src="assets/Group.png" alt="">
+            </div>
+
+            <!-- Log In form start -->
+
+            <div class="card bg-base-100 w-full max-w-sm shrink-0  mt-14 mx-auto">
+                <form class="card-body">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Mobile Number</span>
+                        </label>
+                        <input value="01616227656" type="number" placeholder="Enter your number"
+                            class="input input-bordered" id="number-input" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-bold">Pin</span>
+                        </label>
+                        <input value="1234" type="number" placeholder="Enter your pin" class="input input-bordered"
+                            id="pin-input" required />
+                        <label class="label">
+                            <a href="#" class="label-text-alt link link-hover font-bold">Forgot password?</a>
+                        </label>
+                    </div>
+                    <div class="form-control mt-6">
+                        <button id="log-in-btn"
+                            class="btn btn-primary bg-[#0874F2] rounded-3xl font-semibold text-white text-xl">Login</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Log In form start -->
+
+        </div>
+    </section>
+
+
+    <script src="script/log-in-form.js"></script>
+</body>
+
+</html>
